@@ -1,15 +1,12 @@
 import Chat from "@/Components/Chat";
 import Authenticated from "@/Layouts/AuthenticatedLayout";
-import { Head } from "@inertiajs/inertia-react";
+import { Head } from '@inertiajs/react';
 export default function ChatPage(props) {
-    function AuthenticatedLayout(props) {
-        console.log(props.auth); // Log the auth object to the console
-        // ...
-    }
+
     return (
 
         <Authenticated
-            auth={props.auth}
+            user={props.auth}
             errors={props.errors}
             header={
                 <h2 className="font-semibold text-xl text-gray-800 leading-tight">
